@@ -16,6 +16,10 @@ export default merge(baseConfig, {
     './app/index'
   ],
 
+  resolve: {
+    packageMains: ['webpack', 'browser', 'web', 'browserify', ['jam', 'main'], 'main']
+  },
+  
   output: {
     publicPath: `http://localhost:${port}/dist/`
   },
